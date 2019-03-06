@@ -49,6 +49,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   height: 25rem;
+  background-repeat:no-repeat;
+  background-size: cover;
   background-image: url('../resources/images/main banner background image.jpeg');
 }
 
@@ -75,7 +77,6 @@ body {
 
 .menu {
   display: flex;
-  justify-content: space-around;
   background-color: firebrick;
   padding: 0.75rem 0;
 }
@@ -83,10 +84,56 @@ body {
 /* gadget section */
 
 .gadgets {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 30%;
+  border: 4px solid black;
+}
+
+.img img {
+  height: 9rem;
+  margin: 2rem;
+}
+
+.img h4 {
+  background-color: black;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* contact info section */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info {
+  width: 35%;
+}
+
+.info span {
+  color: black;
+}
+
+.info h5 {
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+/* footer */
+
+footer {
+  text-align: left;
+  height: 5rem;
+  background-color: black;
 }
