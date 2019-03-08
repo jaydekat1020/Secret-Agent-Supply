@@ -3,25 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Secret Agent Supply Inc.</title>
+    <link rel="stylesheet" type="text/css" href="resources\reset.css"> <!-- make sure that reset.css is first (before style.css) so it is not overriding the rules in your style.css instead of the browser's stylesheet-->
     <link rel="stylesheet" type="text/css" href="resources\style.css">
-    <link rel="stylesheet" type="text/css" href="resources\reset.css">
   </head>
   <body>
 
 <!-- header -->
 
 <div class="header">
-  <img src="resources\images\logo.png" alt="binoculars as secrent agen supply logo">
-  <span>secret agent supply inc.</span>
+
+  <div class="container">
+    <img src="resources\images\logo.png" alt="binoculars as secrent agen supply logo">
+    <span>secret agent supply inc.</span>
+  </div>
+
 </div>
 
-<!--section under the header and above the menu-->
+<!--section under the header and above the menu: main banner-->
 
 <div class="news">
 
-  <div class="arrival">
-    <h2>new arrival</span>
-    <h1>sports bikes and motorcycles</h1>
+  <div class="container">
+
+    <div class="headline">
+      <h4>new arrival</h4>
+      <h1>sports bikes and motorcycles</h1>
+    </div>
+
   </div>
 
 </div>
@@ -30,54 +38,63 @@
 
 <div class="menu">
 
-  <div class="small-menu"> <!-- used when the screen is smaller -->
-    <span>Menu</span>
-  </div>
-
-  <div class="large-menu"> <!--Used when the screen is larger-->
-    <span>Eyewear</span>
-    <span>Apparel</span>
-    <span>Gadgets</span>
-    <span>Vehicles</span>
-    <span>Classes</span>
-    <span>Contact</span>
+  <div class="container"> <!--Used when the screen is larger-->
+    <ul>
+      <li>Eyewear</li>
+      <li>Apparel</li>
+      <li>Gadgets</li>
+      <li>Vehicles</li>
+      <li>Classes</li>
+      <li>Contact</li>
+    </ul>
   </div>
 
 </div>
 
 <!--gadget section-->
 
-<div class="gadgets">
+<div class="container">
 
-  <div class="img">
-    <img src="resources\images\pen.png" alt="blue ball point pen">
-    <h4>Exploding Pen</span>
+  <div class="products">
+
+    <div class="product 1">
+        <div class="img">
+            <img src="resources\images\pen.png" alt="blue ballpoint pen">
+        </div>
+            <span class="description">Exploding Pen</span>
+    </div>
+
+    <div class="product 2">
+        <div class="img">
+            <img src="resources\images\watch.png" alt="silver wristwatch">
+        </div>
+            <span class="description">Cellular Watch</span>
+    </div>
+
+    <div class="product 3">
+        <div class="img">
+            <img src="resources\images\glasses.png" alt="black sunglasses">
+        </div>
+            <span class="description">Thermal Glasses</span>
+    </div>
+
   </div>
 
-  <div class="img">
-    <img src="resources\images\watch.png" alt="silver watch">
-    <h4>Cellular Watch</span>
-  </div>
-
-  <div class="img"> <!--sunglassses image is not shrinking according to CSS rules; check later-->
-    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png" alt="black sunglasses">
-    <h4>Thermal Glasses</span> <!-- Will disappear when screen is smaller-->
-  </div>
-
-</div>
 
   <!--contact info section-->
 
-<div class="contact">
+  <div class="contact">
 
-  <div class="info"> <!--location and contact-->
-    <h5>Location</h5>
-    <span>-47.346436, 84.32354</span>
-  </div>
+    <div class="info"> <!--location and contact-->
+      <span class="title">Location</span>
+      <span>-47.346436, 84.32354</span>
+    </div>
 
-  <div class="info">
-    <h5>Hours</h5>
-    <span>0800-1800</span>
+    <div class="info">
+      <span class="title">Hours</span>
+      <span>0800-1800</span>
+    </div>
+
   </div>
 
 </div>
@@ -85,9 +102,8 @@
 <!-- footer-->
 
 <footer>
-<span>Copyright Secret Agent Supply Inc.</span>
+    <div class="container">Copyright Secret Agent Supply Inc.</div>
 </footer>
-
 
   </body>
 </html>
