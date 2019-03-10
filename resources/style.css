@@ -15,20 +15,6 @@ h1, h4 {
   font-weight: bold;
 }
 
-/* media qeries*/
-
-/* @media only screen and (min-width: 960px) {
-  .small-menu {
-    display: none;
-  }
-}
-
-@media only screen and (max-width:960px) {
-  .large-menu {
-    display: none;
-  }
-} */
-
 /* header */
 
 .header {
@@ -100,12 +86,16 @@ h1, h4 {
   list-style: none;
 }
 
+.small ul {
+  display: none;
+}
+
 /* gadget section */
 
 .products, .contact {
   display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
+  justify-content: space-around;
+  margin: 3rem 0;
 }
 
 .product {
@@ -157,4 +147,37 @@ footer {
   background-color: black;
   color: white;
   padding: 3rem;
+}
+
+/* media qeries*/ /* you have to put media queries after all the other code or for some reason it won't work*/
+
+@media only screen and (max-width: 1024px) {
+  .headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline h4 {
+    font-size: 1.2rem;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .small ul {
+    display: block;
+    text-align: center;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .info {
+    width: 35%;
+  }
 }
