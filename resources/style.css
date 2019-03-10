@@ -181,3 +181,49 @@ footer {
     width: 35%;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  .news {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    top: 10rem
+    padding: 1rem 2rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .watch {
+    display: none;
+  }
+
+.contact {
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+footer {
+  text-align: center;
+}
+
+}
